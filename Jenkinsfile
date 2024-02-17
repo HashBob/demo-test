@@ -11,7 +11,7 @@ pipeline {
         }
         stage('Building docker image'){
             steps{
-                bat 'docker build -t shrbobde/temp-jetkins-agent .'
+                bat 'docker build -t shrbobde/temp-jenkins-agent .'
             }
         }
         stage('Running Docker Image form jenkins'){
