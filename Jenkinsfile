@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build git maven repo') {
             steps {
-                checkout changelog: false, poll: false, scm: scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/mahen035/stud-svc']])
+                checkout changelog: false, poll: false, scm: scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/HashBob/demo-test']])
                 bat 'mvn clean install'
 
             }
